@@ -9,10 +9,10 @@ const FeedbackItem = ({ item }) => {
     <Card>
       <div className="num-display">{item.rating}</div>
       <button className="close" onClick={() => deleteFeedback(item.id)}>
-        <FaTimes color="purple" />
+        <FaTimes color="#283b42" />
       </button>
       <button className="edit" onClick={() => editFeedback(item)}>
-        <FaEdit color="purple" />
+        <FaEdit color="#283b42" />
       </button>
       <div className="text-display">{item.text}</div>
     </Card>

@@ -1,14 +1,12 @@
 import React from "react";
-// import '../index.css'
-// import PropTypes from 'prop-types'
 
 const Header = ({ text, bgColor, textColor }) => {
   const headerStyles = {
-    backgroundColor : bgColor, 
-    color:textColor
-  }
+    backgroundColor: bgColor,
+    color: textColor,
+  };
   return (
-    <header style = {headerStyles}>
+    <header style={headerStyles}>
       <div className="container">
         <h1 className="">{text}</h1>
       </div>
@@ -18,11 +16,8 @@ const Header = ({ text, bgColor, textColor }) => {
 
 Header.defaultProps = {
   text: "Feedback App",
-  bgColor: "rgba(0,0,0,0.5)",
-  textColor: "#ff6a95",
+  bgColor: "#1d6a96",
+  textColor: "#202142",
 };
 
-// Header.propTypes = {
-//   text: PropTypes.string,
-// }
 export default Header;
